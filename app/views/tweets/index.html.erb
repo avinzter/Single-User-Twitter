@@ -1,5 +1,14 @@
 <h1>Single User Twitter</h1>
 
+<!--//<p class="error">All tweets must be 1 to 140 characters in length.</p> -->
+
+<% if flash[:success] %>
+<p class="success"><%= flash[:success] %></p>
+<% end %>
+
+<% if flash[:error] %>
+<p class="error"><%= flash[:error] %></p>
+<% end %>
 
 <%= form_for @tweet do |f| %>
 	<%= f.text_field :status %>
@@ -10,4 +19,6 @@
 <% @tweets.each do |tweet| %>
 	<p class="tweet"><%= tweet.status %></p>
 <% end %>
-</div>
+</div> 
+
+<!-- 18:00-->
