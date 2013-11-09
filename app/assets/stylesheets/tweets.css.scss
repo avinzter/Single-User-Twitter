@@ -39,6 +39,11 @@ ul#tweets li {
     color: #226;
 }
 
+ul#tweets li:hover{
+	background: rgba(254,254,254,0.5);
+	font-weight: bold;
+}
+
 form input[type="submit"] {
     margin: 0;
     padding: 5px 10px;
@@ -54,7 +59,7 @@ form input[type="submit"] {
         
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
-    border: 1px solid #bbb;
+    border: 3px solid #bbb;
     background: #e5e5ff;
 }
 form input[type="submit"]:active {
